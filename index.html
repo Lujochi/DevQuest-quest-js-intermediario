@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário com validação</title>
+
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="Quest-and-info">
+        <h1>
+          Ficou com dúvida? <br />
+          Nos mande uma mensagem!
+        </h1>
+        <p>
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </section>
+      <section class="form-container">
+        <form>
+          <div class="box-control">
+            <input
+              class="box-inp"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nome completo *"
+              required
+            />
+            <p class="required-camp show">campo obrigatório</p>
+          </div>
+          <div class="box-control">
+            <input
+              class="box-inp"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email *"
+              required
+            />
+            <p class="required-camp show">campo obrigatório</p>
+          </div>
+          <div class="box-control">
+            <input
+              class="box-inp"
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="Telefone *"
+              required
+            />
+            <p class="required-camp show">campo obrigatório</p>
+          </div>
+          <div class="box-control">
+            <textarea
+              class="box-inp"
+              name="msg"
+              id="msg"
+              placeholder="Mensagem *"
+              required
+            ></textarea>
+            <p class="required-camp show">campo obrigatório</p>
+          </div>
+          <p>*campos obrigatórios</p>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./src/js/scripts.js"></script>
+  </body>
+</html>

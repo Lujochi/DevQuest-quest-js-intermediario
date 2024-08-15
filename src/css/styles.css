@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+main {
+  background: linear-gradient(
+    to bottom,
+    rgb(222, 101, 152) 25%,
+    rgb(100, 129, 229)
+  );
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Quest-and-info {
+  width: 300px;
+  color: #fff;
+}
+
+.Quest-and-info h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.Quest-and-info p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  width: 340px;
+}
+
+.form-container p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.box-control {
+  margin-bottom: 15px;
+}
+
+.box-control input {
+  width: 300px;
+  height: 35px;
+}
+
+.box-inp {
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.box-control input::placeholder,
+.form-container textarea::placeholder {
+  color: rgb(168, 168, 168);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.form-container textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.form-container button[type="submit"] {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #3ccc87;
+  transition: 0.3s;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #29df87;
+}
+
+.box-control .box-inp.invalid {
+  border: 1px solid #f52e2e;
+}
+
+.box-control .box-inp.valid {
+  border: 1px solid #00c22b;
+}
+
+.form-container p.required-camp {
+  color: #f52e2e;
+  font-size: 8px;
+}
+
+.form-container p.required-camp.show {
+  display: none;
+}
